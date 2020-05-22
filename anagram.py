@@ -4,7 +4,6 @@ def anagram(str1,str2):
     else:
         list1 = list(str1)
         list2 = list(str2)
-        count = 0
         for i in range(len(list1)):
             j = 0
             while (j < len(list2)):
