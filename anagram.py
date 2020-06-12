@@ -15,7 +15,7 @@ def anagram(str1,str2):
         else:
             return -1
 
-str1 = "neefum"
+str1 = "enefum"
 str2 = "muneef"
 result = anagram(str1,str2)
 if(result == 1):
