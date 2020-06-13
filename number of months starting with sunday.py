@@ -5,10 +5,14 @@ def isleapyear(year):
         return True
     else:
         return False
-
-year = 1900
-year_range =10
-total_months = year_range * 12
+inp1 = '01 01 1900'
+inp2 = '01 01 1910'
+year = int(inp1[6:])
+if(inp1[3:5]==inp2[3:5]):
+    total_months = (int(inp2[6:])-year)*12
+else:
+    total_months = (int(inp2[6:])-year-1)*12
+    total_months += (12+(int(inp2[3:5])-int(inp1[3:5])))
 day = 1
 true_count = 0
 for i in range(total_months):
